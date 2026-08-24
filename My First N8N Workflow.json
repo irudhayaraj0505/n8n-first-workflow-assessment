@@ -1,0 +1,66 @@
+{
+  "name": "My First N8N Workflow",
+  "nodes": [
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4995922d-27cf-4718-b589-0a75467dab90",
+              "name": "Greeting",
+              "value": "Hello, n8n!",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        224,
+        0
+      ],
+      "id": "243f2fc7-bcdc-4d60-bf55-435cfee126ac",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "dfb49e93-140a-45c5-aca6-1744461ed38e",
+      "name": "When clicking ‘Test workflow’"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "e451e74c-adab-4308-b738-f770fa613030",
+  "meta": {
+    "instanceId": "32d999714f23050c32ac1eadb4b6b166d69de047d4973200529c27c0565e3cf7"
+  },
+  "nodeGroups": [],
+  "id": "homSfGGgXA5NnyN3",
+  "tags": []
+}
